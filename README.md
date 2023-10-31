@@ -162,56 +162,54 @@ GUI界面相关代码可参考代码项目中GUI.py相关文件。
 
 用户可以通过运行GUI.py文件可得：
 
-![](./image1.png){width="4.243273184601925in"
-height="3.618241469816273in"}
+<img width="306" alt="image21" src="https://github.com/Achen0933/S-AES/assets/147233663/e7e875bb-3393-4112-ad8a-ef9d15b4c07d">
+
 
 用户输入16位二进制的明/密文以及ASCII码值，可进行加/解密：
 
-![](./image2.png){width="4.215494313210849in"
-height="3.646020341207349in"}
+<img width="304" alt="image22" src="https://github.com/Achen0933/S-AES/assets/147233663/36e77e19-661a-43c2-8b9d-a0aa46705378">
 
-![](./image3.png){width="4.229384295713036in"
-height="3.590462598425197in"}
+
+<img width="305" alt="image23" src="https://github.com/Achen0933/S-AES/assets/147233663/4865b861-d4ab-43dc-a42d-ff1e545a0a84">
+
 
 若输入密钥或者明文的长度、格式不对（比如密钥长度不为16，二进制明文长度不为16，或者格式不为二进制），会有相关提醒：
 
-![](./image4.png){width="4.180769903762029in"
-height="3.583517060367454in"}
+<img width="301" alt="image24" src="https://github.com/Achen0933/S-AES/assets/147233663/c3e4ea0e-9011-4816-a70c-a6364a997024">
 
-![](./image5.png){width="4.152991032370954in"
-height="3.583517060367454in"}
+<img width="299" alt="image25" src="https://github.com/Achen0933/S-AES/assets/147233663/dc664000-692a-4c20-900c-b0d7483051f4">
 
-![](./image6.png){width="4.187715441819773in"
-height="3.583517060367454in"}
+<img width="302" alt="image26" src="https://github.com/Achen0933/S-AES/assets/147233663/5d0560b8-0584-4a1e-9435-6c9ebcba7ea9">
+
 
 双重加密/三重加密：
 
 双重加密采用ppt上第一种加/解密方式：
 
-![](./image7.png){width="5.534722222222222in"
-height="2.1944444444444446in"}
+<img width="399" alt="image27" src="https://github.com/Achen0933/S-AES/assets/147233663/14c81fe0-68c8-40c2-baa9-e4085f882d1c">
+
 
 三重加密采用{k1, k2}模式：
 
-![](./image8.png){width="4.444444444444445in"
-height="2.173611111111111in"}
+<img width="320" alt="image28" src="https://github.com/Achen0933/S-AES/assets/147233663/4f7ded64-2b4f-4601-bd4d-394d94675488">
+
 
 CBC加/解密：其中可发现小小的篡改密文后引来变化也是很大
 
-![](./image1.png){width="4.395833333333333in"
-height="2.7777777777777777in"}
+<img width="317" alt="image29" src="https://github.com/Achen0933/S-AES/assets/147233663/ffd2acce-90be-439a-afae-1af595bdd744">
+
 
 中间相遇攻击：
 
 选定一对明密文，进行中间相遇攻击，虽运行速度较慢，但最终仍可找到相应的密钥
 
-![](./image2.png){width="5.768055555555556in"
-height="1.9409722222222223in"}
+<img width="907" alt="image30" src="https://github.com/Achen0933/S-AES/assets/147233663/2c0e992b-64f1-4f9b-9a83-8c88ac42179d">
+
 
 ## **三、项目代码部分相关介绍**
 
-![](./image3.png){width="3.2569444444444446in"
-height="2.8055555555555554in"}
+<img width="235" alt="image31" src="https://github.com/Achen0933/S-AES/assets/147233663/48a1a992-ba7b-4e1b-9b61-844e09972347">
+
 
 其中GUI.py主要关于界面与函数接口等的融合；function.py主要设计轮密钥加、行位移、列混淆、S-box等的设计；key.py主要设计了密钥扩展；encryption.py主要完成加密过程；decryption.py主要完成解密过程；ASCII.py完成了对于ASCII编码的加/解密；mid-meet-attack.py完成了中间相遇攻击；tribble_aes.py，double_aes.py，cbc_aes.py分别是关于三重加/解密、双重加/解密、CBC对长明/密文加/解密。
 
@@ -221,18 +219,18 @@ height="2.8055555555555554in"}
 
 S-AES算法加/解密原理流程图如下：
 
-![](./image4.png){width="5.340552274715661in"
-height="3.8404746281714788in"}
+<img width="385" alt="image32" src="https://github.com/Achen0933/S-AES/assets/147233663/f9070f31-90c3-418b-9153-9d7436f19b9e">
+
 
 S-AES流程如下：
 
-![](./image5.png){width="4.014095581802275in"
-height="3.8543646106736658in"}
+<img width="289" alt="image33" src="https://github.com/Achen0933/S-AES/assets/147233663/d85c34a0-c0b8-4fa2-873f-321f919b149a">
+
 
 密钥扩展：
 
-![](./image6.png){width="3.1459951881014874in"
-height="3.7363035870516184in"}
+<img width="227" alt="image34" src="https://github.com/Achen0933/S-AES/assets/147233663/2c651f90-e811-4f5b-b77c-635e42e0c4f6">
+
 
 ## **五、实验步骤**
 
