@@ -8,10 +8,9 @@ TiMi小组S-AES实现
 
 本小组GUI主界面如下：
 
-![](./image1.png){width="3.4583333333333335in"
-height="2.8722222222222222in"}
+![image1](https://github.com/Achen0933/S-AES/assets/147233663/ce85ff45-6b50-487e-803c-1dd3bb48fcfd)
 
-![](./image2.png){width="3.4625in" height="2.8694444444444445in"}
+![image2](https://github.com/Achen0933/S-AES/assets/147233663/e2ab8750-bda9-4568-849e-2cab4f0a467b)
 
 输入部分：加密选项卡输入16-bit的密钥、16-bit的明文（ASCII编码明文详见第3关）；
 
@@ -19,11 +18,10 @@ height="2.8722222222222222in"}
 
 输出结果：加密选项卡输入密钥和明文后点击加密，文本框显示加密后的密文；解密选项卡输入密钥和密文后点击解密，文本框显示解密后的明文。
 
-![](./image3.png){width="3.529861111111111in"
-height="2.901388888888889in"}
+![image3](https://github.com/Achen0933/S-AES/assets/147233663/7abe2b05-d50d-48ab-969f-2fddcb0f6380)
 
-![](./image4.png){width="3.5368055555555555in"
-height="2.9520833333333334in"}
+![image4](https://github.com/Achen0933/S-AES/assets/147233663/bfba722c-dfa7-4550-85b3-1af547916483)
+
 
 由上两图可见，加密前的明文和解密后的明文保持一致，说明加解密过程无误。第1关测试完成。
 
@@ -37,26 +35,26 @@ height="2.9520833333333334in"}
 
 本组结果：
 
-![12343b3b390dd9a14c35c0f0c167b0a](./image5.png){width="3.1944444444444446in"
-height="2.6333333333333333in"}
+<img width="302" alt="image5" src="https://github.com/Achen0933/S-AES/assets/147233663/b1faed47-32e2-4374-9f93-49fae4c854dd">
 
-![998ea6e7d1302932d75ea34536edc4d](./image6.png){width="3.20625in"
-height="2.6631944444444446in"}
+
+<img width="301" alt="image6" src="https://github.com/Achen0933/S-AES/assets/147233663/a5fc615a-0e69-4575-9295-21b990107a68">
+
 
 窦一冉组结果（加密）：
 
-![01789b1e38127181f8301ec67a7ee8d](./image7.jpeg){width="3.079861111111111in"
-height="3.571527777777778in"}
+![image7](https://github.com/Achen0933/S-AES/assets/147233663/5f2361df-c3b0-4739-b6c9-a412ad284dc2)
+
 
 鲁梦瑶组结果（解密）：
 
-![72247a13a4c0a16677e1cea372db61c](./image8.png){width="4.232638888888889in"
-height="2.76875in"}
+![image8](https://github.com/Achen0933/S-AES/assets/147233663/76465b81-d0d6-408b-bd71-259cc4a83696)
+
 
 唐豪组结果（加密）：
 
-![IMG_256](./image9.jpeg){width="4.263194444444444in"
-height="3.2152777777777777in"}
+![image9](https://github.com/Achen0933/S-AES/assets/147233663/3c162225-ed11-4c0e-a3ea-bb830628d9e9)
+
 
 由上面四组加密结果截图可见，加密后密文均为1001000101100100，解密后明文仍为1111000011110000，符合交叉测试的通过要求。第2关测试完成。
 
@@ -72,19 +70,21 @@ Bytes为一组对该二进制字符串进行循环加密，得到加密后的二
 
 输出结果：加密选项卡输入密钥和ASCII明文后点击加密，文本框显示加密后的ASCII密文；解密选项卡输入密钥和ASCII密文后点击解密，文本框显示解密后的ASCII明文。
 
-![](./image10.png){width="3.6125in" height="3.009027777777778in"}
+![image10](https://github.com/Achen0933/S-AES/assets/147233663/49858eec-6bcb-4f2c-b606-1c676fe8318c)
 
-![](./image11.png){width="3.60625in" height="2.990972222222222in"}
+
+![image11](https://github.com/Achen0933/S-AES/assets/147233663/5a7dffbc-8784-4fd5-a79d-224938db8385)
+
 
 由上两图可见，加密前的明文和解密后的明文保持一致，说明加解密过程无误。第3关测试完成。
 
 **综合第1关和第3关，本组的GUI实现了普通16-bit二进制字符串和ASCII编码字符串的同时加\\解密，并可以同时显示加\\解密结果。效果如下：**
 
-![](./image12.png){width="3.529166666666667in"
-height="2.895138888888889in"}
+![image12](https://github.com/Achen0933/S-AES/assets/147233663/343d8ea0-ff83-4c1a-ba97-824f304ae244)
 
-![](./image13.png){width="3.526388888888889in"
-height="2.910416666666667in"}
+
+![image13](https://github.com/Achen0933/S-AES/assets/147233663/7cc468e5-4878-413e-92d7-321525b24b9e)
+
 
 ## **第4关：多重加密**
 
@@ -95,8 +95,8 @@ bits。
 
 本组使用Key(K1+K2)的32-bit密钥，使用两重encryption函数进行双重加密，效果如下：
 
-![8f8ad283895e517414a92181d38fc07](./image14.png){width="5.534722222222222in"
-height="2.1944444444444446in"}
+<img width="399" alt="image14" src="https://github.com/Achen0933/S-AES/assets/147233663/1b24e154-63f9-4c6e-8af2-2214fbc45b40">
+
 
 **4.2 中间相遇攻击**
 
@@ -107,31 +107,31 @@ height="2.1944444444444446in"}
 
 由截图可见中间相遇攻击可以找到多个可能的密钥，截图为暴力破解运行部分截图：
 
-![cb08d51025c7723bf0548faa57665c4](./image15.png){width="5.766666666666667in"
-height="1.9402777777777778in"}
+<img width="907" alt="image15" src="https://github.com/Achen0933/S-AES/assets/147233663/7bfd64c6-6db6-4ff2-b498-83286a5141be">
 
-![9a13f4f7749295356fc46c062d6d627](./image16.png){width="5.7652777777777775in"
-height="2.057638888888889in"}
+
+<img width="863" alt="image16" src="https://github.com/Achen0933/S-AES/assets/147233663/d4eb0706-6b40-41ae-bded-cc2d04b9d89a">
+
 
 由图可见，k1外循环进行到一半左右，已生成276个可能的密钥。完整密钥过于冗余，此处不进行展示。
 
 任选一个可能的密钥进行验证，加解密成功。
 
-![](./image17.png){width="5.757638888888889in"
-height="1.7993055555555555in"}
+![image17](https://github.com/Achen0933/S-AES/assets/147233663/baec2244-34c0-4504-8f94-224ec1aa1eca)
+
 
 **4.3 三重加密**
 
 将S-AES算法通过三重加密进行扩展，本组选择"按照32
 bits密钥Key(K1+K2)的模式进行三重加密解密"的模式进行加解密，原理如下：
 
-![1e75c3bb6031d7657468f65ba1e9a6f](./image18.png){width="2.4659722222222222in"
-height="1.1277777777777778in"}
+<img width="229" alt="image18" src="https://github.com/Achen0933/S-AES/assets/147233663/1b3e22c5-a4d3-4e65-a80e-95bb3ed1e4d2">
+
 
 加解密效果如下：
 
-![3a6153211b35a3726d4b61508a0a2d3](./image19.png){width="4.444444444444445in"
-height="2.173611111111111in"}
+<img width="320" alt="image19" src="https://github.com/Achen0933/S-AES/assets/147233663/f1dc78bf-7bc1-4a62-89b6-a31d3f0492e1">
+
 
 第4关测试完成。
 
@@ -141,8 +141,8 @@ height="2.173611111111111in"}
 
 加解密效果如下：
 
-![a679fa497b43afdd27a01986b3bc1b6](./image20.png){width="4.395833333333333in"
-height="2.7777777777777777in"}
+<img width="317" alt="image20" src="https://github.com/Achen0933/S-AES/assets/147233663/d88b8709-3a07-4658-90d3-7bcdf272ada3">
+
 
 对比篡改密文前后的解密结果可以发现并不相同。第5关测试完成。
 
